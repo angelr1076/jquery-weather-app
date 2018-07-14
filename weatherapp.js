@@ -12,7 +12,7 @@ $(document).ready(function ($) {
           
           var city = data.name;
           var kTemp = Math.round(data.main.temp);
-          var weatherType = data.weather[0].main;
+          var weatherType = data.weather[0].description;
           var icon = data.weather[0].icon;
   
           //Convert Kelvin to Fahrenheit
@@ -38,17 +38,17 @@ $(document).ready(function ($) {
           $(".description").html(weatherType);
           $(".icon").html(icon);
 
-          if (weatherType === "Clear") {
+          if (weatherType === "Clear" || "clear sky") {
             $("body").css("background-image", "url(https://images.unsplash.com/photo-1500110552734-efdb5e2b4e08?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=00f6c4bf847edc19bb6da0e47afe61ee&auto=format&fit=crop&w=1489&q=80)");
             $("body").css("background-size", "cover");
           }
         
-          else if (weatherType === "Rain") {
+          else if (weatherType === "Rain" || "rain" || "showers") {
             $("body").css("background-image", "url(https://images.unsplash.com/photo-1438449805896-28a666819a20?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=950c1c30e781da5fa29e7db2f185c360&auto=format&fit=crop&w=1050&q=80)");
             $("body").css("background-size", "cover");
           }
   
-          else if (weatherType === "Clouds") {
+          else if (weatherType === "Clouds" || "clouds" || "broken clouds") {
             $("body").css("background-image", "url(https://images.unsplash.com/photo-1455735459330-969b65c65b1c?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=f7a67f06c27804552d6bbd40afe0961e&auto=format&fit=crop&w=1052&q=80)");
             $("body").css("background-size", "cover");
           }

@@ -11,6 +11,8 @@
     grid-template-columns: repeat(6, minmax(100px, 1fr));
     grid-template-rows: repeat(5, minmax(100px, 1fr));
     grid-gap: 5px;
+    justify-content: center;
+    align-content: center;
     color: rgb(248, 248, 248);
     text-shadow: 2px 2px 4px #000000;
     padding: 10px;
@@ -40,7 +42,7 @@
     font-size-adjust: 0.58;
     grid-column: 3 / 5;
     grid-row: 5 / 6;
-    justify-content: center;
+    text-align: center;
     align-content: center;
     border-radius: 5%;
     background-color: hsla(71, 43%, 51%, 0.5);
@@ -136,9 +138,6 @@
     box-shadow: none !important;
 } */
 
-/* body {
-    display: grid;
-    background-image: url("http://res.cloudinary.com/angelrodriguez/image/upload/v1531099513/colorfulsky.jpg");
+body {
     background-color: hsla(229, 43%, 51%, 0.5); 
-    background-size: cover;
-} */
+}
