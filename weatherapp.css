@@ -136,9 +136,9 @@
     box-shadow: none !important;
 } */
 
-body {
+/* body {
     display: grid;
     background-image: url("http://res.cloudinary.com/angelrodriguez/image/upload/v1531099513/colorfulsky.jpg");
-    /* background-color: hsla(229, 43%, 51%, 0.5);  */
+    background-color: hsla(229, 43%, 51%, 0.5); 
     background-size: cover;
-}
+} */
