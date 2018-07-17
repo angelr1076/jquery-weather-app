@@ -3,8 +3,7 @@ $(document).ready(function ($) {
     if (navigator.geolocation) {
       navigator.geolocation.getCurrentPosition(function(position) {
           var long = position.coords.longitude;
-          var lat = position.coords.latitude;
-         
+          var lat = position.coords.latitude;     
   //FCC API pass-through. No API key necessary.     
         var api =
             "https://fcc-weather-api.glitch.me/api/current?lat=" + lat + "&lon=" + long;
@@ -50,7 +49,7 @@ $(document).ready(function ($) {
             $("body").css("background-size", "cover");
           }
           
-        else if (weatherType === "thunderstorm") {
+        else if (weatherType === "thunderstorm" || weatherType === "Thunderstorm" || weatherType === "thunder") {
             $("body").css("background", "url(https://images.unsplash.com/photo-1516188239414-6bfa485294d8?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=06592b7fb0b963a5ce907ffc74a4a045&auto=format&fit=crop&w=751&q=80)");
             $("body").css("background-size", "cover");
           }
