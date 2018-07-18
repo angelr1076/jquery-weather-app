@@ -3,7 +3,7 @@ $(document).ready(function ($) {
     if (navigator.geolocation) {
       navigator.geolocation.getCurrentPosition(function(position) {
           var long = position.coords.longitude;
-          var lat = position.coords.latitude;     
+          var lat = position.coords.latitude; 
   //FCC API pass-through. No API key necessary.     
         var api =
             "https://fcc-weather-api.glitch.me/api/current?lat=" + lat + "&lon=" + long;
@@ -64,7 +64,7 @@ $(document).ready(function ($) {
             $("body").css("background-size", "cover");
           }
           
-          else if (weatherType === "mist") {
+          else if (weatherType === "mist" || weatherType === "Mist") {
             $("body").css("background", "url(https://images.unsplash.com/photo-1415860407914-fe42e09b4f77?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=35717e2e5ffbc5dd8438987a0d85de7d&auto=format&fit=crop&w=750&q=80)");
             $("body").css("background-size", "cover");
           }
