@@ -44,7 +44,7 @@ $(document).ready(function ($) {
             $("body").css("background-size", "cover");
           }
         
-          else if (weatherType === "Rain" || weatherType === "rain" || weatherType === "showers" || weatherType === "shower rain" || weatherType === "light rain") {
+          else if (weatherType === "Rain" || weatherType === "Drizzle" weatherType === "rain" || weatherType === "showers" || weatherType === "shower rain" || weatherType === "light rain") {
             $("body").css("background", "url(https://images.unsplash.com/photo-1438449805896-28a666819a20?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=950c1c30e781da5fa29e7db2f185c360&auto=format&fit=crop&w=1050&q=80)");
             $("body").css("background-size", "cover");
           }
